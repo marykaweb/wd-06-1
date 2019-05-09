@@ -1,0 +1,45 @@
+.container_checkbox {
+  width: 400px;
+  height: 20px;
+  display: flex;
+  align-content: space-between;
+}
+
+.checkbox {
+  width: 200px;
+  height: 20px;
+  align-content: center;
+
+}
+
+.label-text {
+  font-family: @baseFont;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.form-checkbox_box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: @checkboxColor;
+  border-radius: 2px;
+  background-image: url("../../img/check/check.png");
+  background-repeat: no-repeat;
+  background-position: center -10px;
+  transition: 0.1s ease-out;
+  margin-right: 9px;
+}
+
+.form-input_checkbox:checked + .form-checkbox_box {
+  background-position: center;
+}
+
+.form-input_checkbox {
+  display: none;
+}
+
+.label-text {
+  vertical-align: text-top;
+}
