@@ -1,16 +1,17 @@
 * {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html, body {
-	font-family: @baseFont;
+html,
+body {
+    font-family: @baseFont;
     font-size: 16px;
     font-weight: 400;
-	padding: 0;
-	margin: 0;
-	min-height: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
     position: relative;
     color: #000;
     line-height: 1;
@@ -18,36 +19,43 @@ html, body {
 
 /* fix for top margin collapsing and vertical scroll prevent for body tag, when body height = 100% */
 body::before {
-	content: "";
-	display: block;
-	width: 1px;
-	height: 0px;
-	background-color: transparent;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 0px;
+    background-color: transparent;
 }
 
-input, textarea {
-	font-family: @baseFont;
-	font-size: 16px;
-	line-height: 1.5;
-	resize: vertical;
+input,
+textarea {
+    font-family: @baseFont;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	font-weight: 400;
-	line-height: 1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1;
 }
 
 img {
-	display: block;
+    display: block;
     max-width: 100%;
 }
 
 a {
-	color: @linkColor;
+    color: @linkColor;
 }
 
-code, pre {
+code,
+pre {
     background-color: @lightGrayBg;
     border-radius: 6px;
     -moz-osx-font-smoothing: auto;
@@ -109,13 +117,14 @@ blockquote p {
     z-index: 1;
 }
 
-hr, .hr-line {
-	border-bottom: 1px solid #e9eff3;
+hr,
+.hr-line {
+    border-bottom: 1px solid #e9eff3;
 }
 
 .content-padding {
-	padding-top: 75px;
-	padding-bottom: 80px;
+    padding-top: 75px;
+    padding-bottom: 80px;
 }
 
 /***style for sticky-footer***/

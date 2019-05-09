@@ -1,0 +1,26 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+    - var title = 'Аватарки - UI-kit и HTML фреймворк - Документация';
+    - var pageClass = 'body--dashboard';
+
+block content
+    .main-wrapper
+        .container.container--left.user-content.pt-35
+            h1 Аватарки
+            .section-ui
+                +img("../img/avatars/ava-small.png")
+                +img("../img/avatars/ava-big.png")
+            pre.
+                +img("../img/avatars/ava-small.png")
+                +img("../img/avatars/ava-big.png")
+
+            .title mixins/_avatars.pug
+            pre.
+                mixin img(src)
+                    img(src= src)
+//- есть вопросы, мне кажется мой подход не верный
+//- 1 не знаю оборачивать ли дивом img или можно так оставить?
+//- 2 нужно ли добавлять класс к аватарке, просто тогда я так понимаю нужно из большой делать маленькую через класс?
+//- 3 бейдж тоже относиться к блоку аватар или его не нужно делать?
+//- 4 что то еще ? ))
