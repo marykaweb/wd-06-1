@@ -1,2 +1,34 @@
-mixin img(src)
-	img(src= src)
+//- mixin avatar(src, text = "")
+//- 	div&attributes(attributes)
+//- 		img(src= src)
+//- 		div.avatar--img__content
+//- 			| #{text}
+//-=====================================================================
+//- или сделать двумя миксинами...
+//- mixin smallAva(src, text = "")
+//- 	div.small--avatar
+//- 		img(src= src)
+//- 		div.avatar--img__content
+//- 			| #{text}
+
+//- mixin bigAva(src, text = "")
+//- 	div.big--avatar
+//- 		img(src= src)
+//- 		div.avatar--img__content
+//- 			| #{text}
+//-===================================================================
+mixin avatar(href, src, text = "")
+	div.avatar
+		a(href= href)
+			div&attributes(attributes)
+				img(src= src)
+				div.avatar--img__content
+					| #{text}
+
+				//- div.avatar
+				//- 	a(href="#!")
+				//- 		div.small--avatar
+				//- 			img(src="../img/avatars/ava-test.png")
+				//- 			div.avatar--img__content
+				//- 				| test
+
