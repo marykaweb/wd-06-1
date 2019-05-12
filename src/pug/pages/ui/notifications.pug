@@ -1,0 +1,43 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'UI-Нотификации';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.main-wrapper
+		.container.container--left.user-content.pt-35
+			.temporary-wrapper
+				h1 Нотификации
+				br
+				br
+				h5 Ошибка
+				br
+				br
+				include ../../sections/notifications/comment-error.pug
+				pre.
+					include ../../sections/notifications/comment-error.pug
+				br
+				br
+				include ../../sections/notifications/email-error.pug
+				pre.
+					include ../../sections/notifications/email-error.pug
+				br
+				h5 Успех
+				br
+				br
+				include ../../sections/notifications/created-successfully.pug
+				pre.
+					include ../../sections/notifications/created-successfully.pug
+				br
+				br
+				h5 Нотификация
+				br
+				br
+				include ../../sections/notifications/update-info.pug
+				pre.
+					include ../../sections/notifications/update-info.pug
+				br
+				br
+				br
+				 
