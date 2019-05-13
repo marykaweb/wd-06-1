@@ -10,12 +10,11 @@ block content
             h1 Вспомогательные элементы
 
             .section-ui
-                +badge('Бэйдж', 'Пользователь', '#!')
+                +badge('Пользователь', '#!')
             pre.
-                +badge('Бэйдж', 'Пользователь', '#!')
+                +badge('Пользователь', '#!')
 
             .title mixins/_badge.pug
             pre.
-                mixin badge(badge, text, link)
-                    .title-4 #{badge}
+                mixin badge(text, link)
                     a(class="badge" href= link)&attributes(attributes) #{text}
