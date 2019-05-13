@@ -1,0 +1,32 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+  - var title = 'Список - UI-kit и HTML фреймворк - Документация';
+  - var pageClass = 'body--dashboard';
+
+block content
+  .main-wrapper
+    .container.container--left.user-content.pt-35
+      h1 Список
+
+      .section-ui
+        .list_title Список
+        ul.list_container
+          .list_content
+            each val in ['Первый пункт', 'Второй пункт. Если вы хотите погулять по территории парка, к вашим услугам огромная разветвлённая система троп, по которым проложены маршруты длительностью от получаса до нескольких дней.', 'Третий пункт']
+              li= val  
+                      
+      pre.
+        .list_title Список
+        ul.list_container
+          .list_content
+            each val in ['Первый пункт', 'Второй пункт. Если вы хотите погулять по территории парка, к вашим услугам огромная разветвлённая система троп, по которым проложены маршруты длительностью от получаса до нескольких дней.', 'Третий пункт']
+              li= val
+      
+      .title list.pug
+        pre.
+          .list_title Список
+          ul.list_container
+            .list_content
+              each val in ['Первый пункт', 'Второй пункт. Если вы хотите погулять по территории парка, к вашим услугам огромная разветвлённая система троп, по которым проложены маршруты длительностью от получаса до нескольких дней.', 'Третий пункт']
+                li= val
