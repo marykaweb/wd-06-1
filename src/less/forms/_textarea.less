@@ -1,0 +1,19 @@
+.textarea {
+  transition: border-color 0.2s ease-in, color 0.2s ease-in;
+  width: 100%;
+  min-height: 100px;
+  border-radius:  8px;
+  border: 1px solid @borderColor;
+  background-color: @white;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+  padding: 15px;
+  &:focus {
+    outline-style: none;
+    border-color: darken(@borderColor, 7);
+    transition: 0.2s ease-in;
+    box-shadow: 0px 0px 0px 2px rgba(99, 117, 138, 0.3);
+  }
+}
