@@ -1,0 +1,25 @@
+.radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radio__but {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #cccccc;
+  transition: 0.5s;
+
+}
+
+.input-radio:checked + .radio__but {
+      background: #1e6791;
+      border: 2px solid #ffffff ;
+}
+.input-radio {
+  display: none;
+}

@@ -1,0 +1,30 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+    - var title = 'Поля ввода - UI-kit и HTML фреймворк - Документация';
+    - var pageClass = 'body--dashboard';
+
+block content
+    .main-wrapper
+        .container.container--left.user-content.pt-35
+            h1 Поля ввода
+
+            .section-ui
+                +textarea('Введите инфу ')
+            pre.
+                +textarea('Ввести инфу')
+
+            .title mixins/_textarea.pug
+            pre.
+                mixin textarea(placeholder)
+                    textarea.textarea(placeholder= placeholder)
+
+            h1 Input
+            .section-ui
+                +input('Введите имя')
+            pre.
+                +input('Введите имя')
+            .title  mixins/_input.pug
+                pre.
+                    mixin input(placeholder)
+                        input.input(placeholder= placeholder)
