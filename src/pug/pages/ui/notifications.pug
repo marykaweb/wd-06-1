@@ -9,14 +9,22 @@ block content
 		.container.container--left.user-content.pt-35
 			.temporary-wrapper
 				h1 Нотификации
-				br
-				br
+
+				//- +notification('Some text')
+				+notification('Some text 55 ', 'error')
+				//- +notification('Some text', 'success')
+
+				//- +notify('Просто нотификация')
+				//- +error('Сообщени о ошибке!')
+				//- +success('Все прошло успешно!')
+
+
+
 				h5 Ошибка
-				br
-				br
-				include ../../sections/notifications/comment-error.pug
+				.section-ui
+					+notificationComment('Введите ваше имя')
 				pre.
-					include ../../sections/notifications/comment-error.pug
+					+notificationComment('Введите ваше имя')
 				br
 				br
 				include ../../sections/notifications/email-error.pug

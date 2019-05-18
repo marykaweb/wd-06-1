@@ -1,3 +1,38 @@
+mixin notification(text, type)
+	- 	
+		let addClass = '';
+		switch (type) {
+			case 'error':
+				addClass = 'notification--error';
+				breake;
+			case 'success':
+				addClass = 'notification--success';
+				breake;		
+		}
+
+	.notification(class= addClass) #{text} #{addClass}
+
+
+
+
+
+mixin notify(text)
+	.notification #{text}
+
+mixin error(text)
+	.notification.notification--error #{text}
+
+mixin success(text)
+	.notification.notification--success #{text}
+
+
+
+
+//- errorWithDescription
+//- successWithDescription
+//- notifyWithDescription
+
+
 mixin notificationComment(text)
 	.notification-comment-error #{text}
 
