@@ -1,0 +1,27 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+    - var title = 'Radio кнопки - UI-kit и HTML фреймворк - Документация';
+    - var pageClass = 'body--dashboard';
+
+block content
+    .main-wrapper
+        .container.container--left.user-content.pt-35
+            h1 Radio кнопки
+
+            .section-ui
+                +radio('Выбор 1')
+                +radio('Выбор 2')
+
+            pre.
+                +radio('Ввести текст')
+
+            .title mixins/_radio.pug
+            pre.
+                mixin radio(text)
+                    .radio_form
+                            label
+                                input(class="input-radio" type="radio" name="radio-group")
+                                span.radio__but
+                                span.radio_text \#{text}
+
