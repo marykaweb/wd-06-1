@@ -1,0 +1,14 @@
+mixin notificationComment(text)
+	.notification-comment-error #{text}
+
+mixin notificationEmail(text, paragraph1, paragraph2)
+	div.notification-email
+		div.notification-email-error #{text}
+		div.notification-email-content #{paragraph1}
+		div.notification-email-content #{paragraph2}
+
+mixin notificationCreated(text)
+	.notification-created-successfully #{text}
+
+mixin notificationInfo(text)
+	.notification-update-info #{text}
